@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-There are n number of locked boxes 
+There are n number of locked boxes
 Each box is numbered in order
 from 0 to n - 1
 each box may hold keys to the other boxes.
