@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 two D matrix provided as input
 rotated 90 degrees clockwise
