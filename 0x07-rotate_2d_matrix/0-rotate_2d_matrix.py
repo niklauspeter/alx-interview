@@ -11,7 +11,9 @@ def rotate_2d_matrix(matrix):
     """
     n = len(matrix)
     for layer in range(n // 2):
-        first, last, offset = layer, n - 1 - layer, 0
+        first = layer
+        last = n - 1 - layer
+        offset = 0
         for i in range(first, last):
             top = matrix[first][i]
             matrix[first][i] = matrix[last - offset][first]
@@ -32,3 +34,18 @@ def rotate_2d_matrix(matrix):
 #             row.insert(i, A[i])
 #         Output.append(row)
 #     return Output
+# """
+# Inside the outer loop:
+
+# first, last, offset = layer, n - 1 - layer, 0: Defines variables for the indices of the first and last elements in the current layer, and an offset to keep track of the position within the layer.
+
+# for i in range(first, last): Iterates through each element in the current layer, excluding the last one.
+
+# Inside the inner loop:
+
+# top = matrix[first][i]: Saves the top element of the current layer.
+
+# The next four lines perform a 90-degree clockwise rotation for the current set of four elements by swapping their positions.
+
+# css
+# """
