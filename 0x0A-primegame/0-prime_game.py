@@ -51,7 +51,7 @@ def isWinner(x, nums):
     The player that cannot make a move loses the game.
 
     They play x rounds of the game,
-    where n may be different for each round. 
+    where n may be different for each round.
     Assuming Maria always goes first and both players play optimally,
     determine who the winner of each game is.
     """
